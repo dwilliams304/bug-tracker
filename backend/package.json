@@ -1,0 +1,21 @@
+{
+  "name": "bug-tracker-backend",
+  "version": "1.0.0",
+  "description": "Back end server for bug-tracker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Davis Williams",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "knex": "^3.1.0",
+    "knex-cleaner": "^1.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
