@@ -52,9 +52,6 @@
 .Severe{
     background-color: var(--severe);
 }
-.critical{
-    background-color: var(--critical);
-}
 .Immediate{
     background-color: var(--immediate);
 }
