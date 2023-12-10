@@ -1,0 +1,35 @@
+.tickets-table{
+    width: 95%;
+    margin: 1rem auto;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    border: 1px solid gray;
+}
+
+.tickets-table thead tr {
+    background-color: gray;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.tickets-table th,
+.tickets-table td{
+    padding: 1rem 1.5rem;
+}
+
+.tickets-table tbody tr {
+    border-bottom: 1px solid black;
+}
+
+.tickets-table tbody tr:nth-last-of-type(2n){
+    background-color: rgb(243, 243, 243);
+}
+
+.severity {
+    text-align: center;
+    background-color: rgb(218, 0, 0);
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
