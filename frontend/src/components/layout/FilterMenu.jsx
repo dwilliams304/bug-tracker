@@ -19,6 +19,16 @@ export default function FilterMenu(){
 
             </select>
 
+            <select id="ticket-severity" name="ticket-severity">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+                <option value="Severe">Severe</option>
+                <option value="Critical">Critical</option>
+                <option value="Immediate">Immediate</option>
+
+            </select>
+
         </nav>
     )
 }
