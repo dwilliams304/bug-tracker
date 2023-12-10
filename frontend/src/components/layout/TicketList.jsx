@@ -11,8 +11,9 @@ export default function TicketList(){
                         <th>ticket-id</th>
                         <th>title</th>
                         <th>creation-date</th>
-                        <th style={{textAlign: "center"}}>severity</th>
+                        <th>severity</th>
                         <th>assigned-to</th>
+                        <th>status</th>
                         <th>days-open</th>
                         <th>Tags</th>
                     </tr>

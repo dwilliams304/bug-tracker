@@ -5,8 +5,9 @@ export default function Ticket(){
             <td>0afe34-d592et</td>
             <td>Data loss in account page</td>
             <td>10/28/2023</td>
-            <td style={{textAlign: "center"}}><span className="severity">Critical</span></td>
+            <td><span className="severity">Critical</span></td>
             <td>Robert, Sarah</td>
+            <td><span className="status">In Testing</span></td>
             <td>41d</td>
             <td>UI, Data, Security</td>
         </tr>

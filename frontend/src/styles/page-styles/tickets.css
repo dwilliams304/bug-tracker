@@ -15,6 +15,7 @@
 
 .tickets-table th,
 .tickets-table td{
+    text-align: center;
     padding: 1rem 1.5rem;
 }
 
@@ -26,10 +27,17 @@
     background-color: rgb(243, 243, 243);
 }
 
-.severity {
-    text-align: center;
-    background-color: rgb(218, 0, 0);
+.severity,
+.status{
     border-radius: 50px;
     padding: 5px 10px;
     font-weight: bold;
+}
+
+.severity {
+    background-color: rgb(255, 0, 0);
+}
+
+.status{
+    background-color: rgb(77, 170, 0);
 }
