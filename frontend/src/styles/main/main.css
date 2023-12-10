@@ -1,0 +1,29 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 45vw;
+}
+
+header h1{
+    text-align: center;
+    font-size: 25px;
+}
+
+nav {
+    background-color: black;
+    border-radius: 50%;
+}
+
+.tickets-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    background-color: gray;
+}
+
+.tickets-header h2 {
+    border: 1px dashed black;
+    box-sizing: content-box;
+    padding: 0.3rem 1rem;
+}
