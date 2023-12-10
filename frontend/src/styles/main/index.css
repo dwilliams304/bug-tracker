@@ -11,6 +11,20 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --low: white;
+  --medium: white;
+  --high: white;
+  --severe: white;
+  --critical: white;
+  --immediate: white;
+
+  --toDo: white;
+  --open: white;
+  --inProgress: white;
+  --inTesting: white;
+  --closed: white;
+  --resolved: white;
 }
 
 a {

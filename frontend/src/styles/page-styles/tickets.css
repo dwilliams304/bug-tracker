@@ -19,13 +19,18 @@
     padding: 1rem 1.5rem;
 }
 
-.tickets-table tbody tr {
+/* .tickets-table tbody tr {
     border-bottom: 1px solid black;
-}
-
+} */
 .tickets-table tbody tr:nth-last-of-type(2n){
     background-color: rgb(243, 243, 243);
 }
+.tickets-table tbody tr:hover {
+    cursor: pointer;
+    background-color: rgb(175, 255, 224);
+}
+
+
 
 .severity,
 .status{
@@ -34,10 +39,42 @@
     font-weight: bold;
 }
 
-.severity {
-    background-color: rgb(255, 0, 0);
+/* Ticket Status/Severity  */
+.Low{
+    background-color: var(--low);
+}
+.Medium{
+    background-color: var(--medium);
+}
+.High{
+    background-color: var(--high);
+}
+.Severe{
+    background-color: var(--severe);
+}
+.critical{
+    background-color: var(--critical);
+}
+.Immediate{
+    background-color: var(--immediate);
 }
 
-.status{
-    background-color: rgb(77, 170, 0);
+
+.To-Do{
+    background-color: var(--toDo);
+}
+.Open{
+    background-color: var(--open);
+}
+.In-Progress{
+    background-color: var(--inProgress);
+}
+.In-Testing{
+    background-color: var(--inTesting);
+}
+.Closed{
+    background-color: var(--closed);
+}
+.Resolved{
+    background-color: var(--resolved);
 }

@@ -1,7 +1,9 @@
 import Ticket from "../common/Ticket";
 import '../../styles/page-styles/tickets.css';
 
-export default function TicketList(){
+export default function TicketList(props){
+    const {data} = props;
+
     return(
         <div className="table-container">
             <table className="tickets-table">
@@ -20,9 +22,11 @@ export default function TicketList(){
                 </thead>
 
                 <tbody className="tickets-list">
-                    <Ticket />
-                    <Ticket />
-                    <Ticket />
+                    {
+                        data.map((ticket, idx) => {
+                            return <Ticket key={idx} ticket={ticket} />
+                        })
+                    }
                 </tbody>
             </table>
         </div>
