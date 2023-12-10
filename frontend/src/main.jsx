@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <header>
-        <h1>Bug Tracker/Task Board</h1>
+        <h1>Bug Tracker</h1>
       </header>
       <BugTracker />
     </>

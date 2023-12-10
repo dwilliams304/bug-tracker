@@ -6,7 +6,7 @@ export default function Ticket(){
             <td>Data loss in account page</td>
             <td>10/28/2023</td>
             <td><span className="severity">Critical</span></td>
-            <td>Robert, Sarah</td>
+            <td>Robert, Sarah, Jason, Jessie, Malik</td>
             <td><span className="status">In Testing</span></td>
             <td>41d</td>
             <td>UI, Data, Security</td>
