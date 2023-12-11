@@ -12,18 +12,18 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --low: white;
-  --medium: white;
-  --high: white;
-  --severe: white;
-  --immediate: white;
+  --low: rgb(202, 255, 196);
+  --medium: rgb(251, 255, 0);
+  --high: rgb(255, 153, 0);
+  --severe: rgb(255, 0, 0);
+  --immediate: rgb(255, 0, 191);
 
-  --toDo: white;
-  --open: white;
-  --inProgress: white;
+  --toDo: rgb(153, 153, 153);
+  --open: rgb(255, 255, 255);
+  --inProgress: rgb(255, 255, 255);
   --inTesting: white;
-  --closed: white;
-  --resolved: white;
+  --closed: rgb(255, 255, 255);
+  --resolved: white
 }
 
 a {
