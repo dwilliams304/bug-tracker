@@ -1,8 +1,8 @@
 const router = require('express').Router();
-const Bugs = require('./bugs-model');
+const Bugs = require('./tickets-model');
 
 router.get('/', (req, res, next) => {
-    res.json({message: "Bugs get routed!"});
+    res.json({message: "Tickets get routed!"});
     next();
 })
 
