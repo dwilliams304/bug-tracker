@@ -4,7 +4,7 @@ export default function FilterMenu(){
     return(
         <div className="filter-menu">
             <h2>Filters</h2>
-            <nav className="filter-buttons">
+            <div className="filter-buttons">
                 <select id="project-name" name="project-name">
                     <option value="Project 1">Project 1</option>
                     <option value="Project 2">Project 2</option>
@@ -42,7 +42,7 @@ export default function FilterMenu(){
 
                 </select>
 
-            </nav>
+            </div>
         </div>
     )
 }
