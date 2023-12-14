@@ -4,10 +4,8 @@ const mongoose = require('mongoose');
 const helmet = require('helmet');
 const cors = require('cors');
 
-const authRouter = require('./auth/auth-router');
-const usersRouter = require('./users/users-router');
-const ticketsRouter = require('./tickets/tickets-router');
-const tasksRouter = require('./tasks/tasks-router');
+const usersRouter = require('./routers/users-router');
+const ticketsRouter = require('./routers/tickets-router');
 
 const server = express();
 
@@ -17,10 +15,8 @@ server.use(helmet());
 server.use(express.json());
 server.use(cors());
 
-server.use(`/api/${apiVersion}/auth`, authRouter);
 server.use(`/api/${apiVersion}/users`, usersRouter);
 server.use(`/api/${apiVersion}/tickets`, ticketsRouter);
-server.use(`/api/${apiVersion}/tasks`, tasksRouter);
 
 mongoose.connect(process.env.DATABASE_URL);
 const db = mongoose.connection;

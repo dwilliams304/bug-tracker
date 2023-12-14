@@ -6,7 +6,7 @@ const ticketSchema = new mongoose.Schema({
         required: true
     },
     ticketID: {
-        type: Number,
+        type: String,
         required: true
     },
     ticketTitle: {
@@ -22,7 +22,10 @@ const ticketSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    ticketAssignees: [],
+    ticketAssignees: [{
+        userName: String,
+        userID: Number,
+    }],
     ticketStatus: {
         type: String,
         required: true
@@ -31,7 +34,10 @@ const ticketSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-    ticketTags: []
+    ticketTags: [{
+        type: String,
+        required: false
+    }]
 })
 
 module.exports = mongoose.model('Tickets', ticketSchema);
