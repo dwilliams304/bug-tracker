@@ -5,7 +5,7 @@ import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
 import SettingsIcon from '@mui/icons-material/Settings';
 import InfoIcon from '@mui/icons-material/Info';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
-import { RolesForm, TicketsForm, UsersForm } from './settings/index';
+import { RolesMenu, TicketsMenu, UsersMenu } from './settings/menus/index';
 
 
 const Settings = () => {
@@ -33,9 +33,9 @@ const Settings = () => {
                 </a>
             </aside>
             <div className="menu">
-                <RolesForm />
-                <TicketsForm />
-                <UsersForm />
+                <RolesMenu />
+                {/* <TicketsForm /> */}
+                {/* <UsersForm /> */}
             </div>
         </div>
     )
