@@ -18,8 +18,8 @@ function App() {
   return (
     <>
       <NavBar />
-      <Settings />
-      {/* <BugTracker /> */}
+      {/* <Settings /> */}
+      <BugTracker />
     </>
   );
 }

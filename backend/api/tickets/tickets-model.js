@@ -1,13 +1,37 @@
-const db = require('../../data/db-config.js');
+const mongoose = require('mongoose');
 
-async function GetTickets(id){
-    if(!id){
-        const bugs = await db('tickets');
-    }
-    else{
-        const bugs = await db('tickets')
-            .where('ticket_id', id);
-    }
-}
+const ticketSchema = new mongoose.Schema({
+    projectID: {
+        type: String,
+        required: true
+    },
+    ticketID: {
+        type: Number,
+        required: true
+    },
+    ticketTitle: {
+        type: String,
+        required: true
+    },
+    ticketCreation: {
+        type: Date,
+        required: true,
+        default: Date.now
+    },
+    ticketSeverity: {
+        type: String,
+        required: true
+    },
+    ticketAssignees: [],
+    ticketStatus: {
+        type: String,
+        required: true
+    },
+    ticketDaysOpen: {
+        type: Number,
+        required: true
+    },
+    ticketTags: []
+})
 
-module.exports = {};
+module.exports = mongoose.model('Tickets', ticketSchema);
