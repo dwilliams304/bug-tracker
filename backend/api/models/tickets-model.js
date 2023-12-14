@@ -2,12 +2,9 @@ const mongoose = require('mongoose');
 
 const ticketSchema = new mongoose.Schema({
     projectID: {
-        type: String,
-        required: true
-    },
-    ticketID: {
-        type: String,
-        required: true
+        type: Number,
+        required: false,
+        default: 0
     },
     ticketTitle: {
         type: String,
@@ -22,22 +19,18 @@ const ticketSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    ticketAssignees: [{
-        userName: String,
-        userID: Number,
-    }],
+    ticketAssignees: [
+        { type: Schema.Types.ObjectId, ref: 'Users' }
+    ],
     ticketStatus: {
         type: String,
         required: true
     },
     ticketDaysOpen: {
         type: Number,
-        required: true
-    },
-    ticketTags: [{
-        type: String,
         required: false
-    }]
+    },
+    ticketTags: []
 })
 
 module.exports = mongoose.model('Tickets', ticketSchema);
