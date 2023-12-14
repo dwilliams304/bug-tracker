@@ -1,11 +1,6 @@
 const mongoose = require('mongoose');
 
 const ticketSchema = new mongoose.Schema({
-    projectID: {
-        type: Number,
-        required: false,
-        default: 0
-    },
     ticketTitle: {
         type: String,
         required: true
@@ -20,7 +15,7 @@ const ticketSchema = new mongoose.Schema({
         required: true
     },
     ticketAssignees: [
-        { type: Schema.Types.ObjectId, ref: 'Users' }
+        
     ],
     ticketStatus: {
         type: String,

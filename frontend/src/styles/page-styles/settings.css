@@ -51,6 +51,10 @@ aside.sidebar a.active::before{
     background-color: rgb(43, 54, 119);
 }
 
+div.menu{
+    display: flex;
+}
+
 /* .sidebar a{
     border-bottom: 1px dashed black;
 } */
