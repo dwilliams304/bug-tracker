@@ -1,0 +1,37 @@
+div.settings {
+    border: 1px solid black;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+aside.sidebar{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid black;
+    width: 20%;
+}
+
+aside.sidebar a {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 1rem;
+}
+
+aside.sidebar a.active{
+    color: green;
+    font-weight: bold;
+}
+
+aside.sidebar a.active::before{
+    content: '';
+    width: 6px;
+    height: 18px;
+    background-color: rgb(43, 54, 119);
+}
+
+/* .sidebar a{
+    border-bottom: 1px dashed black;
+} */
