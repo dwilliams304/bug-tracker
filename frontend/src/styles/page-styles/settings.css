@@ -1,9 +1,11 @@
 div.settings {
+    position: relative;
     border: 1px solid black;
     width: 75%;
+    height: 66vh;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 2rem auto;
 }
 
 aside.sidebar{
@@ -11,18 +13,35 @@ aside.sidebar{
     flex-direction: column;
     border-right: 1px solid black;
     width: 20%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+aside.sidebar a:last-child{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
 }
 
 aside.sidebar a {
     display: flex;
+    width: 100%;
     align-items: center;
     cursor: pointer;
     gap: 1rem;
+    color: black;
+    text-decoration: none;
+}
+
+aside.sidebar a:hover h3{
+    text-decoration: underline;
 }
 
 aside.sidebar a.active{
-    color: green;
+    color: rgb(0, 0, 0);
     font-weight: bold;
+    background-color: rgb(204, 253, 255);
 }
 
 aside.sidebar a.active::before{

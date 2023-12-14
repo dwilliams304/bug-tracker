@@ -12,6 +12,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  --textColor: #010E08;
+  --backgroundColor: #F1FEF9;
+  --primaryColor: #11EE99;
+  --secondaryColor: #79ABF6;
+  --accentColor: #5B53F3;
+
   --low: rgb(202, 255, 196);
   --medium: rgb(251, 255, 0);
   --high: rgb(255, 153, 0);
@@ -24,15 +30,6 @@
   --inTesting: white;
   --closed: rgb(255, 255, 255);
   --resolved: white
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
 }
 
 body {

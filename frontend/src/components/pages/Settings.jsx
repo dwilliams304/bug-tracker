@@ -4,6 +4,7 @@ import ContactsIcon from '@mui/icons-material/Contacts';
 import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
 import SettingsIcon from '@mui/icons-material/Settings';
 import InfoIcon from '@mui/icons-material/Info';
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 
 const Settings = () => {
     return(
@@ -23,6 +24,10 @@ const Settings = () => {
                 </a>
                 <a href='#'><InfoIcon />
                     <h3>Info</h3>
+                </a>
+
+                <a href='#'><ExitToAppIcon />
+                    <h3>Logout</h3>
                 </a>
             </aside>
             <div className="menu">
