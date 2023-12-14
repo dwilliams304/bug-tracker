@@ -41,3 +41,16 @@ nav h1{
     display: flex;
     justify-content: space-around;
 }
+
+.create{
+    border-radius: 25px;
+    background-color: blueviolet;
+    border: 1px solid cyan;
+    transition: all 0.2s ease-in-out;
+}
+
+.create:hover{
+    background-color: cyan;
+    color: black;
+    border-color: blueviolet;
+}

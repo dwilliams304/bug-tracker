@@ -1,7 +1,7 @@
 const RolesForm = props => {
     return(
         <div>
-            <form className="roles">
+            <form className="roles-form">
                 <input type="text" placeholder="Role name..." />
                 <div>
                     <h3>Priviliges</h3>
