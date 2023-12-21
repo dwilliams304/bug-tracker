@@ -54,3 +54,25 @@ nav h1{
     color: black;
     border-color: blueviolet;
 }
+
+.add-ticket {
+    position: sticky;
+    background-color: blueviolet;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    bottom: 1rem;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.add-ticket p {
+    display: flex;
+    font-size: 40px;
+    padding: 1rem;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}

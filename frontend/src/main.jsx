@@ -18,8 +18,11 @@ function App() {
   return (
     <>
       <NavBar />
-      <Settings />
-      {/* <BugTracker /> */}
+      {/* <Settings /> */}
+      <BugTracker />
+      <div className="add-ticket">
+        <p>+</p>
+      </div>
     </>
   );
 }

@@ -13,6 +13,12 @@
     font-weight: bold;
 }
 
+.tickets-table th{
+    background-color: gray;
+    position: sticky;
+    top: 0;
+}
+
 .tickets-table th,
 .tickets-table td{
     text-align: center;
